@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+      $("#projects").hide();
+      $("#experience").hide();
+      $("#personalSkills").hide();
+    
+    $(".proshow").click(function(){
+      $("#projects").show();
+      $("#experience").hide();
+      $("#personalSkills").hide();
+    });
+
+    $(".experience").click(function(){
+      $("#projects").hide();
+      $("#experience").show();
+      $("#personalSkills").hide();
+    });
+    
+    $(".personalskills").click(function(){
+      $("#projects").hide();
+      $("#experience").hide();
+      $("#personalSkills").show();
+    });
+
+    });
+
+    
+
+</script>
+
+</head>
+<body>
+<div id="mainBody">
+<h1 style="color: white;">Alex Pacey</h1>
+<img id="heroImage" src="Profile Picture.jpeg">
+
+<div id="topNav">
+<p id="topNavText">Email</p>
+<a href="https://github.com/PaceyA" id="topNavText">Github Page</a>
+<a href="https://www.linkedin.com/in/alexander-pacey-8a27921b8/"id="topNavText">LinkedIn</a>
+</div>
+
+<hr>
+<p style="padding-top: 5%;padding-bottom: 5%; font-size:16px">Hi, this is a portfolio containing some projects I have worked on, previous experience as well
+    as some skills I feel I possess.
+</p>
+<hr>
+
+<div id="navigation">
+<button id="buttons" class="proshow">Projects</button>
+<button id="buttons" class="experience">Experience</button>
+<button id="buttons" class="personalskills">Personal Skills</button>
+</div>
+
+
+
+<div id="projects">
+<ol>
+  <p style="text-align: center;">Projects</p>
+  <li>DCGAN Creative Art</li>
+  <li>Bounce Game</li>
+  <li>React Native Recipe App</li>
+</ol>
+</div>
+
+<div id="experience">
+  <p style="text-align: center;">Experience</p>
+<ol>
+  <li>None</li>
+</ol>
+</div>
+
+<div id="personalSkills">
+  <p>Personal Skills</p>
+</div>
+
+</div>
+</body>
+</html>
+
+<style>
+    body {
+        background: radial-gradient( circle, transparent 50%, black 150%), darkslateblue;
+        height: 180px;
+        font-family: Arial;
+      }
+    
+    
+    h1 {
+      color: white;
+      text-align: center;
+    }
+    
+    p {
+      font-family: verdana;
+      font-size: 20px;
+      color: white;
+    }
+
+    #heroImage{
+      height: 150px;
+      width: 150px;
+      padding-bottom: 2%;
+      border-radius: 50%;
+    }
+
+    #mainBody{
+      
+        padding-left: max(15%);
+        padding-right: max(15%);
+        text-align: center;
+        
+    }
+
+    #navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #buttons{
+       padding : 2%;
+       padding-left: 8%; 
+       padding-right: 8%;
+
+       margin: 1%;
+       margin-left: 3%;
+       margin-right: 3%;
+
+       background-color: darkslateblue;
+       color: white;
+    }
+
+    #buttons:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: 0.5s;
+        
+    }
+
+    #topNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    #topNavText{
+      font-size: 14px;
+      text-decoration: none;
+      color: white;
+     
+    }
+    #topNavText:hover{
+      color: lightslategrey;
+      cursor: pointer;
+      transition: 0.5s;
+
+    
+    }
+
+    #projects{
+      color: white;
+      text-align: left;
+      
+    }
+
+    #experience{
+      color: white;
+      text-align: left;
+    }
+
+   
+    </style>
